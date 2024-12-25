@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+ }
+.nav-bar{
+    width: 212px;
+    height: 100vh;
+    background-color: #FAF3E0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper img{
+    width: 180px;
+    height: 190px;
+    margin-left: 15px;
+    margin-top: 30px;
+    border-radius: 120px;
+    object-fit: cover;
+}
+
+.upper h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+.upper .button{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.upper a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #3E4E5E;
+    border-radius: 60px;
+    margin-left: 10px; 
+}
+
+.upper i{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #3E4E5E;
+    margin-bottom: 40px;
+    padding: 10px;
+    transition: background-color 0.5s;
+    height: 60px;
+    border-radius: 50px; 
+}
+
+.upper i:hover{
+    background-color: #00C853;
+    height: 60px;
+    border-radius: 60px; 
+}
+
+.lower h3{
+   text-align: center;
+   font-size: 2rem;
+   color: #297FD2;
+}
+
+.page {
+    display: flex;
+    width: 300px;
+    padding: 50px;
+}
+
+.h-data {
+    padding-left: 30px;
+    width: 100%;
+    background-color: #212121;
+    color: #faf3e0;
+}
+
+.page-item1 {
+    background-color: #faf3e0;
+    border-radius: 5px;
+    padding: 100px;
+    width: 200px;
+    text-align: center;
+    color: black;
+    
+}
+
+.page-item2 {
+ 
+    background-color: #faf3e0;
+    border-radius: 5px;
+    padding: 100px;
+    width: 200px;
+    text-align: center;
+    color: black;
+}
+
+.page-item3 {
+    background-color: #faf3e0;
+    border-radius: 5px;
+    padding: 100px;
+    width: 200px;
+    text-align: center;
+    color: black;
+}
+
+.expense-amount {
+    font-size: 2rem;
+    color: #d9534f; 
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+.expense-amountt {
+    font-size: 2rem;
+    color: #223EA6; 
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+.expense-amounttt {
+    font-size: 2rem;
+    color: #00C853; 
+    margin: 5px 0 0;
+    font-weight: bold;
+}

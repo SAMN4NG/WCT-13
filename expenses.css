@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+
+body{
+    width: 100%;
+    background-color: #212121;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 100%;
+}
+
+.nav-bar{
+    width: 212px;
+    min-height: 100vh;
+    background-color: #FAF3E0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper img{
+    width: 180px;
+    height: 190px;
+    margin-left: 15px;
+    margin-top: 30px;
+    border-radius: 120px;
+    object-fit: cover;
+}
+
+.upper h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+.upper .button{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.upper a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #3E4E5E;
+    border-radius: 60px;
+    margin-left: 10px; 
+}
+
+.upper i{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #3E4E5E;
+    margin-bottom: 40px;
+    padding: 10px;
+    transition: background-color 0.5s;
+    height: 60px;
+    border-radius: 50px; 
+}
+
+.upper i:hover{
+    background-color: #00C853;
+    height: 60px;
+    border-radius: 60px; 
+}
+
+.lower h3{
+   text-align: center;
+   font-size: 2rem;
+   color: #297FD2;
+}
+
+.expense-data{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 50px 300px 1fr;
+    max-height: 100vh;
+    margin-right: 120px;
+}
+
+.top-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h4{
+   font-size: 2rem;
+   color: #FAF3E0;
+}
+
+.top-bar button{
+    width: 50px;
+    height: 30px;
+}
+
+.chart{
+    margin-top: 20px;
+    background-color: #FAF3E0;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar-chart{
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    right: 120px;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(to bottom, #f2f2f2, #ddd 2px, #fff 2px, #fff 10px);
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.bar-chart div{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.bar-chart .b1{
+    height: 20%;
+    background: #297FD2;
+}
+
+.bar-chart .b2{
+    height: 50%;
+    background: #297FD2;
+}
+
+.bar-chart .b3{
+    height: 80%;
+    background: #297FD2;
+}
+
+.chart .h1{
+    position: relative;
+    right: 18px;
+    height: 100%;
+}
+
+.chart .h2{
+    position: relative;
+    right: 52px;
+    height: 80%;
+}
+
+.chart .h3{
+    position: relative;
+    right: 85px;
+    height: 40%;
+}
+
+.chart .h4{
+    position: relative;
+    right: 118px;
+    height: 20%;
+}
+
+.chart .h5{
+    position: relative;
+    right: 150px;
+    height: 60%;
+}
+
+.input-expense{
+    margin-top: 20px;
+    background-color: #FAF3E0;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.input-expense input{
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 20px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 40px;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.input-expense input:focus{
+    outline: none;
+}
+
+.input-expense h3{
+    font-size: 1.4rem;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.reason{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.budget-type{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.budget-type h3{
+    margin-top: 15px;
+}
+
+.budget-type select{
+    margin-left: 15px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.budget-type option{
+    width: 500px;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
