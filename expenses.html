@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expensio</title>
+    <title>Expense</title>
     <link rel="stylesheet" href="expenses.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     
-  <div class="wrapper">
+<div class="wrapper">
 
     <div class="nav-bar">
 
@@ -17,9 +17,9 @@
              <img src="download.jpg" alt="">
              <h2>Seanghai</h2>
             <div class="button">
-             <i class='bx bx-home'><a href="#">Home</a></i>
-             <i class='bx bx-money'><a href="#">Expenses</a></i>
-             <i class='bx bx-wallet'><a href="#">My Budget</a></i>
+             <i class='bx bx-home'><a href="Hpage.html">Home</a></i>
+             <i class='bx bx-money'><a href="expenses.html">Expenses</a></i>
+             <i class='bx bx-wallet'><a href="mybudget.html">My Budget</a></i>
             </div>  
         </div>
 
@@ -30,9 +30,9 @@
      </div>
 
     <div class="expense-data">
+
         <div class="top-bar">
             <h4>EXPENSES</h4>
-            <button></button>
         </div>
    
         <div class="chart">
@@ -43,35 +43,63 @@
              <div class="h5"><h4>60%</h4></div>
              
         <div class="bar-chart">
-            <div class="b1">Fisst</div>
-            <div class="b2">seconde</div>
-            <div class="b3">thirdo</div>
+            <div class="b1">First</div>
+            <div class="b2">Second</div>
+            <div class="b3">Third</div>
         </div>
              
         </div>
    
+    <div class="box-2">
+
         <div class="input-expense">
-             <div class="reason">
-                <h3>Reason : </h3>
-                <input type="text">
-             </div>
-             <div class="budget-type">
-                <h3>Budget type : </h3>
-                <select name="budget" id="">
-                    <option value="transport">Transport</option>
-                    <option value="eating">Eating</option>
-                </select>
-             </div>
-             <div class="prices">
-                <h3>Prices : </h3>
-                <input type="text">
-             </div>
-        </div>
-   
+            <div class="reason">
+               <h3>Reason : </h3>
+               <div>
+                   <input type="text" id="reason">
+               </div>
+            </div>
+            <div class="budget-type">
+               <h3>Budget type : </h3>
+               <div>
+                   <select name="budget" id="budgets">
+                       <option value="transport">Transport</option>
+                       <option value="eating">Eating</option>
+                   </select>
+               </div>  
+            </div>
+            <div class="prices">
+               <h3>Prices : </h3>
+               <div>
+                   <input type="text" id="prices">
+               </div>
+            </div>
+            <div class="submit">
+               <button id="submit">Submit</button>
+            </div>
+       </div>
+
+       <div class="display-items">
+          <h1>Items</h1>
+          <div class="type-items">
+            <h3>Reason</h3>
+            <h3>Budget</h3>
+            <h3>Prices</h3>
+          </div>
+         
+          <ul id="list-item">
+             
+          </ul>
+       </div>
+  
     </div>
     
   </div>
+          
+</div>
   
 
 </body>
+
+   <script src="expenses.js"></script>
 </html>

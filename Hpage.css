@@ -1,10 +1,20 @@
-body {
+*{
     margin: 0;
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
     padding: 0;
- }
+    box-sizing: border-box;
+    font-family: Bree-Serif;
+}
+
+body{
+    width: 100%;
+    background-color: #212121;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 100%;
+}
+
 .nav-bar{
     width: 212px;
     height: 100vh;
@@ -67,65 +77,153 @@ body {
    color: #297FD2;
 }
 
-.page {
+.h-data {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 50px 350px 1fr;
+    max-height: 100vh;
+    margin-right: 120px;
+}
+
+.top-bar{
+    width: 100%;
     display: flex;
-    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h4{
+   font-size: 2rem;
+   color: #FAF3E0;
+}
+
+.expense-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
     padding: 50px;
 }
 
-.h-data {
-    padding-left: 30px;
-    width: 100%;
-    background-color: #212121;
-    color: #faf3e0;
+.page-items{
+    border-radius: 5px;
+    padding: 60px;
+    width: 450px;
+    text-align: center;
 }
 
-.page-item1 {
-    background-color: #faf3e0;
-    border-radius: 5px;
-    padding: 100px;
-    width: 200px;
-    text-align: center;
-    color: black;
-    
+.page-items p{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5px 0 0;
 }
 
-.page-item2 {
- 
+.page-items h4{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.page-item1{
     background-color: #faf3e0;
-    border-radius: 5px;
-    padding: 100px;
-    width: 200px;
-    text-align: center;
     color: black;
 }
 
-.page-item3 {
+.page-item2{
     background-color: #faf3e0;
-    border-radius: 5px;
-    padding: 100px;
-    width: 200px;
-    text-align: center;
     color: black;
 }
 
-.expense-amount {
-    font-size: 2rem;
+.page-item3{
+    background-color: #faf3e0;
+    color: black;
+}
+
+.page-item1 p{
     color: #d9534f; 
-    margin: 5px 0 0;
-    font-weight: bold;
 }
 
-.expense-amountt {
-    font-size: 2rem;
+.page-item2 p{
     color: #223EA6; 
-    margin: 5px 0 0;
-    font-weight: bold;
 }
 
-.expense-amounttt {
-    font-size: 2rem;
+.page-item3 p{
     color: #00C853; 
-    margin: 5px 0 0;
-    font-weight: bold;
+}
+
+.pie-chart{
+    border-radius: 5px;
+    margin-left: 50px;
+    width: 89%;
+    background-color: #faf3e0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pie{
+    align-self: center;
+    margin-left: 200px;
+    flex: 1 0 225px;
+    max-width: 325px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: 
+    radial-gradient(
+        #faf3e0  40%,
+        transparent 0 70%,
+        #faf3e0 0
+    ),  
+    conic-gradient(
+        red  40%,
+        blue 0 70%,
+        green 0 80%,
+        yellow 0
+    );
+}
+
+.month-title{
+    margin-top: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.caption{
+    width: 500px;
+    height: 200px;
+     margin-top: 50px;
+     font-size: 1.5rem;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8rem;
+     justify-content: center;
+}
+
+.caption span{
+    position: relative;
+    padding-inline-start: 1.5rem;
+}
+
+.caption span::before{
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    content: '';
+    width: 0.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.caption span:nth-child(1)::before{
+    background-color: red;
+}
+
+.caption span:nth-child(2)::before{
+    background-color: blue;
+}
+
+.caption span:nth-child(3)::before{
+    background-color: green;
+}
+
+.caption span:nth-child(4)::before{
+    background-color: yellow;
 }

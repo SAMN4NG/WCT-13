@@ -4,49 +4,78 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
-        <title>My Profile </title>
+        <title>Homepage</title>
         <link rel="stylesheet" href="Hpage.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title> Pie Chart CSS</title>
     </head>
 
     <body>
+
+<div class="wrapper">
+
         <div class="nav-bar">
 
             <div class="upper">
                  <img src="download.jpg" alt="">
                  <h2>Seanghai</h2>
                 <div class="button">
-                 <i class='bx bx-home'><a href="#">Home</a></i>
-                 <i class='bx bx-money'><a href="#">Expenses</a></i>
-                 <i class='bx bx-wallet'><a href="#">My Budget</a></i>
+                    <i class='bx bx-home'><a href="Hpage.html">Home</a></i>
+                    <i class='bx bx-money'><a href="expenses.html">Expenses</a></i>
+                    <i class='bx bx-wallet'><a href="mybudget.html">My Budget</a></i>
                 </div>  
             </div>
             <div class="lower">
                 <h3>Tamdan luy</h3>
             </div>
          </div>
+
          <div class="h-data">
+
             <div class="top-bar">
-                <h1>ALL EXPENSES</h1>
-                <button></button>
+                <h4>ALL EXPENSES</h4>
             </div>
-            <div class="page">
-                <div class="page-item1">
-                    <p1>Expenses this year</p1>
-                    <p class="expense-amount">$350,981</p>
+
+            <div class="expense-page">
+
+                <div class="page-item1 page-items">
+                    <h4>Expenses this year</h4>
+                    <p>$350,981</p>
                 </div>
-                <div class="page-item2">
-                    <p2>Expenses this month</p2>
-                    <p class="expense-amountt">$2561</p>
+
+                <div class="page-item2 page-items">
+                    <h4>Expenses this month</h4>
+                    <p>$2561</p>
                 </div>
-                <div class="page-item3">
-                    <p2>All Bugests</p2>
-                    <p class="expense-amounttt">$3000</p>
+
+                <div class="page-item3 page-items">
+                    <h4>All Bugests</h4>
+                    <p>$3000</p>
                 </div>
 
             </div>
+
+            <div class="pie-chart">
+                <div class="pie"></div>
+                <div>
+                    <div class="month-title">
+                        <h1>This month</h1>
+                    </div>
+                    <div class="caption">             
+                        <span>Eating</span>
+                        <span>Eating</span>
+                        <span>Eating</span>
+                        <span>Eating</span>
+                    </div>
+                </div>
+                
+            </div> 
+
         </div>
-        </div>
-     </body>
+
+    </div>
+    
+ </div>
+
+   </body>
 </html>

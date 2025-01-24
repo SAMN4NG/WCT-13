@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+    font-family: Bree-Serif;
 }
 
 
@@ -98,11 +98,6 @@ body{
    color: #FAF3E0;
 }
 
-.top-bar button{
-    width: 50px;
-    height: 30px;
-}
-
 .chart{
     margin-top: 20px;
     background-color: #FAF3E0;
@@ -110,6 +105,7 @@ body{
     padding: 30px;
     display: flex;
     align-items: flex-end;
+    width: 94%;
 }
 
 .bar-chart{
@@ -177,18 +173,26 @@ body{
     height: 60%;
 }
 
+.box-2{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   height: 100%;
+   gap: 10px;
+}
+
 .input-expense{
     margin-top: 20px;
     background-color: #FAF3E0;
     border-radius: 20px;
     padding: 30px;
+    width: 95%;
 }
 
 .input-expense input{
     margin-bottom: 20px;
     margin-right: 50px;
     margin-left: 20px;
-    width: 100%;
+    width: 500px;
     border: 1px solid black;
     border-radius: 30px;
     height: 40px;
@@ -198,6 +202,7 @@ body{
 
 .input-expense input:focus{
     outline: none;
+    border: 2px solid black;
 }
 
 .input-expense h3{
@@ -225,18 +230,17 @@ body{
 
 .budget-type select{
     margin-left: 15px;
-    width: 100%;
+    width: 500px;
     border: 1px solid black;
     border-radius: 30px;
     background-color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-family: sans-serif;
     padding: 10px;
 }
 
 .budget-type option{
     width: 500px;
-    font-size: 1.3rem;
     padding: 15px;
 }
 
@@ -245,3 +249,59 @@ body{
     align-items: center;
     width: 100%;
 }
+
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.submit button{
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #b59ae7;
+    border: 1px solid black;
+}
+
+.submit button:hover{
+    cursor: pointer;
+}
+
+.display-items{
+    margin-top: 20px;
+    background-color: #FAF3E0;
+    border-radius: 20px;
+    padding: 30px;
+    width: 88%;
+}
+
+.display-items ul{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.display-items li{
+    font-size: 1.5rem;
+    word-spacing: 15rem;
+    margin-top: 30px;
+}
+
+.display-items h1{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.type-items{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+}
+
+
